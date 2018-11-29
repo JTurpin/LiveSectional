@@ -117,3 +117,4 @@ class App():
             print "LiveSectional Update completed!"
             logfile.close()
             time.sleep(450)
+app = App()
