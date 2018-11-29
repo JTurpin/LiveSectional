@@ -10,6 +10,6 @@ from daemon import runner
 
 import live_sectional
 
-app = App()
+app = live_sectional.App()
 daemon_runner = runner.DaemonRunner(app)
 daemon_runner.do_action()
