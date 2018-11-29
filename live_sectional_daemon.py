@@ -9,15 +9,7 @@ import datetime
 from daemon import runner
 
 import live_sectional
-
-class App():
-    def __init__(self):
-        self.stdin_path = '/dev/null'
-        self.stdout_path = '/dev/null'
-        self.stderr_path = '/dev/null'
-        self.pidfile_path =  '/var/run/livesectional.pid'
-        self.pidfile_timeout = 5
-    run()
+from livesectional import App
 
 app = App()
 daemon_runner = runner.DaemonRunner(app)
