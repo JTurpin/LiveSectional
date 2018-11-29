@@ -9,7 +9,7 @@ import datetime
 from daemon import runner
 
 import live_sectional
-from livesectional import App
+from live_sectional import App
 
 app = App()
 daemon_runner = runner.DaemonRunner(app)
